@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="190dp">
+
+    <TextView
+        android:id="@+id/textViewNombreDeCIudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Monteria"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El clima esta chevere"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNombreDeCIudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toEndOf="@+id/textViewNombreDeCIudad"
+        app:layout_constraintTop_toTopOf="@+id/textViewNombreDeCIudad" />
+
+    <TextView
+        android:id="@+id/textViewTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Temperatura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreDeCIudad" />
+
+    <TextView
+        android:id="@+id/textViewHumedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Humedad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatura" />
+
+    <TextView
+        android:id="@+id/textViewVelocidadViento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Velocidad del Viento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHumedad" />
+
+    <TextView
+        android:id="@+id/textViewValorTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="10 grados"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTemperatura"
+        app:layout_constraintStart_toEndOf="@+id/textViewTemperatura"
+        app:layout_constraintTop_toTopOf="@+id/textViewTemperatura" />
+
+    <TextView
+        android:id="@+id/textViewValorHumedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="x valor"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewHumedad"
+        app:layout_constraintStart_toEndOf="@+id/textViewHumedad"
+        app:layout_constraintTop_toTopOf="@+id/textViewHumedad" />
+
+    <TextView
+        android:id="@+id/textViewValorVelocidadViento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="20 km/h"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewVelocidadViento"
+        app:layout_constraintStart_toEndOf="@+id/textViewVelocidadViento"
+        app:layout_constraintTop_toTopOf="@+id/textViewVelocidadViento" />
+
+    <ImageView
+        android:id="@+id/imageViewIsFrist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/textViewFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fecha"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewNombreDeCIudad"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreDeCIudad" />
+</androidx.constraintlayout.widget.ConstraintLayout>
